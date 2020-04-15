@@ -1,0 +1,46 @@
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <link rel="shortcut icon" type="image/x-icon" href="paint.png"/>
+      <title>Paint</title>
+    </head>
+
+    <body ondragstart="return false;" ondrop="return false;">
+        <div class='container'>
+            <div class="color-container">
+
+                <h6>Current Color</h6>
+                <div class="current-color">
+
+                </div>
+
+                <hr>
+                <div >
+                    <h6>Pick Color</h6>
+                    <button onclick="changeColor('black')" class='color-button' style="background-color: black;"></button>
+                    <button onclick="changeColor('white')" class='color-button' style="background-color: white;"></button>
+                    <button onclick="changeColor('red')" class='color-button' style="background-color: Red;"></button>
+                    <button onclick="changeColor('green')" class='color-button' style="background-color: green;"></button>
+                    <button onclick="changeColor('blue')" class='color-button' style="background-color: blue;"></button>
+                    <button onclick="changeColor('purple')" class='color-button' style="background-color: purple;"></button>
+                    <button onclick="changeColor('orange')" class='color-button' style="background-color: orange;"></button>
+                </div>
+                <hr>
+                <div class='custom-color'>
+                    <h6>Custom Color</h6>
+                    <input id='input' type="text " value='#' >
+                    <button onclick="customColor()"> enter</button>
+                </div>
+
+              </div>
+            <div class='canvas'>
+
+            </div>
+
+        </div>
+
+    </body>
+
+
+    <script src="index.js"></script>
+</html>
